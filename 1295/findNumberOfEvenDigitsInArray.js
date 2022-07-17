@@ -12,5 +12,7 @@ const findEvenDigits = (array) => {
 };
 
 const array = [1, 13, 87, 8363, 843, 92822, 947478, 84, 893, 0, 73];
+console.time('timethis');
 const totalEvenDigits = findEvenDigits(array);
+console.timeEnd('timethis');
 console.log(totalEvenDigits);

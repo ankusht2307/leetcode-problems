@@ -29,3 +29,6 @@ const haystack = 'sadbutsad',
 
 const result = strStr(haystack, needle);
 console.log(result);
+
+// Time complexity: O(n) * O(m) => O(n^2)
+// Space complexity: O(n)

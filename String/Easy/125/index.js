@@ -9,14 +9,18 @@ var isPalindrome = function (s) {
   if (s === ' ') return true;
 
   let str = s.replace(/[\W_]/g, '').toLowerCase();
+  let start = 0;
+  let end = str.length - 1;
 
-  let reversedString = '';
-
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversedString += str[i];
+  while (start < end) {
+    if (str[start] === str[end]) {
+      start++;
+      end--;
+    } else {
+      return false;
+    }
   }
-
-  return str === reversedString;
+  return true;
 };
 
 const s = 'A man, a plan, a canal: Panama';
